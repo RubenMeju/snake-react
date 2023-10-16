@@ -6,7 +6,7 @@ Un clásico juego de la serpiente desarrollado en JavaScript y HTML. ¡Juega y d
 
 ## Demo
 
-Puedes jugar al juego en línea en el siguiente enlace: [Jugar al Snake](https://tu-sitio-web.com)
+Puedes jugar al juego en línea en el siguiente enlace: [Jugar al Snake](https://snake-react-chi.vercel.app/)
 
 ## Características
 
