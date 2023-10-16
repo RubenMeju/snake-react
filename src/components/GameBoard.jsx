@@ -8,9 +8,7 @@ function GameBoard() {
   const progressTimeRef = useRef(0)
   const dispatch = useDispatch()
 
-  const { isRunning, board, speed, isGameOver } = useSelector(
-    (state) => state.game
-  )
+  const { isRunning, board, speed } = useSelector((state) => state.game)
 
   const update = (time) => {
     requestRef.current = requestAnimationFrame(update)
@@ -64,22 +62,18 @@ function GameBoard() {
 
   return (
     <div className="game-board">
-      {isGameOver ? (
-        <div className="game-over-message">Has perdido</div>
-      ) : (
-        board.map((row, rowIndex) => (
-          <div key={rowIndex} className="row">
-            {row.map((cell, colIndex) => (
-              <div
-                key={colIndex}
-                className={`cell ${
-                  cell === 1 ? 'snake' : cell === 2 ? 'food' : ''
-                }`}
-              />
-            ))}
-          </div>
-        ))
-      )}
+      {board.map((row, rowIndex) => (
+        <div key={rowIndex} className="row">
+          {row.map((cell, colIndex) => (
+            <div
+              key={colIndex}
+              className={`cell ${
+                cell === 1 ? 'snake' : cell === 2 ? 'food' : ''
+              }`}
+            />
+          ))}
+        </div>
+      ))}
     </div>
   )
 }
