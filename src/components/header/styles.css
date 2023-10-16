@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.text-score {
+  color: #fff;
+}
+
+button {
+  min-width: 60px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
