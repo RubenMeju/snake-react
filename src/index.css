@@ -22,7 +22,8 @@ main {
   display: flex;
   background-color: rgb(113, 173, 78);
 
-  border: 4px solid rgb(4, 119, 0);
+  border: 10px solid rgb(4, 119, 0);
+  border-radius: 10px;
 }
 
 .cell {
